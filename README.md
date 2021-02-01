@@ -1,2 +1,16 @@
 # BrainTumorSegmentation
-Perform segmentation on MRI images of Brain Tumor using deep learning model Unet
+Perform segmentation on MRI images of Brain Tumor using deep learning model, Unet
+
+# Introduction
+When caught early and treated properly, a brain tumor diagnosis does not have to be life-threatening. But with so many types of brain tumors, accurately diagnosing one can be a complicated process. Brain MRI provides detailed images often used by doctors to determine the location and type of tumor. Extreme precision is always required in both biopsy and surgical resection. Imaging also important during follow-up to monitor tumor growth or recurrence and detect new tumor cells in the brain. Therefore ability to map out the tumor precisely can be invaluable in evaluation pre- and post-treatment. 
+
+However manual segmentation of brain tumor from 3D MRI volumes is a very time-consuming task and the performance is highly relied on operator’s experience. Moreover, reproducible results are difficult to achieve even by the same operator.
+
+In recent years, automatic segmentation based on deep learning methods has been widely used, where a neural network can automatically learn image features. In medical image analysis field, U-net is one of the most important architecture to carry out medical semantic segmentation task. It can accurately segment the desired feature target such as tumors' size, shape, regularity, location and their heterogenous appearance. Implementing U-Net for brain tumor segmentation from MRI images might be useful in improving its diagnosis and management.
+
+# Problem Statement
+Brain tumors are a heterogeneous group of central nervous system neoplasms that arise within or adjacent to the brain. The location of the tumor within the brain has a profound effect on the patient's symptoms, surgical therapeutic options, and the likelihood of obtaining a definitive diagnosis. The location of the tumor in the brain also markedly alters the risk of neurological toxicities that alter the patient's quality of life.  Traditionally, brain tumors are detected by imaging only after the onset of neurological symptoms.  
+
+Current imaging techniques provide meticulous anatomical delineation and are the principal tools for establishing that neurological symptoms are the consequence of a brain tumor. There are many techniques for brain tumor detection. We have used semantic segmentation using the UNET Architecture for brain tumor detection to solve this task with better efficiency and accuracy.  
+
+UNET was our preferred choice of architecture because its proven to be more successful conventional models in terms of architecture and in terms pixel-based image segmentation formed from convolutional neural network layers. It’s even effective with limited dataset images. At convolutional layers, we used RELU activation function in common with encoder and decoder. In the encoder, max pooling is used for downsampling. In the decoder, deconvolution is used for upsampling. The most important characteristic of UNET is skip connection between encoder and decoder. The feature map with the position information in the encoder is concatenated to the restored feature map in the decoder. Therefore, the position information is complemented, and each pixel can be more accurately assigned to the detected tumor. The presentation of this architecture was first realized through the analysis of biomedical images and its well suited for our application.
