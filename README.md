@@ -1,5 +1,5 @@
 # BrainTumorSegmentation
-Perform segmentation on MRI images of Brain Tumor using deep learning model, Unet
+Perform semantic Segmentation on MRI images of Brain Tumor using UNET
 
 # Introduction
 When caught early and treated properly, a brain tumor diagnosis does not have to be life-threatening. But with so many types of brain tumors, accurately diagnosing one can be a complicated process. Brain MRI provides detailed images often used by doctors to determine the location and type of tumor. Extreme precision is always required in both biopsy and surgical resection. Imaging also important during follow-up to monitor tumor growth or recurrence and detect new tumor cells in the brain. Therefore ability to map out the tumor precisely can be invaluable in evaluation pre- and post-treatment. 
